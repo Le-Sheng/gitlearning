@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++.exe build active file",
+      "command": "D:\\mingw-w64\\bin\\g++.exe",
+      "args": ["-g", 
+        "${file}",
+        "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "-I", "D:/opencv/build/x64/MinGW/install/include",
+        "-I", "D:/opencv/build/x64/MinGW/install/include/opencv",
+        "-I", "D:/opencv/build/x64/MinGW/install/include/opencv2",
+        "-L", "D:/opencv/build/x64/MinGW/install/x64/mingw/lib",
+        "-lopencv_core345",
+        "-lopencv_imgproc345",
+        "-lopencv_imgcodecs345",
+        "-lopencv_video345",
+        "-lopencv_ml345",
+        "-lopencv_highgui345",
+        "-lopencv_objdetect345",
+        "-lopencv_flann345",
+        "-lopencv_imgcodecs345",
+        "-lopencv_photo345",
+        "-lopencv_videoio345"],
+      "options": {
+        "cwd": "D:\\mingw-w64\\bin"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
